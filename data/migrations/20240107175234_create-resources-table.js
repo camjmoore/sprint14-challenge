@@ -7,7 +7,6 @@ exports.up = function (knex) {
     resources.increments('resource_id');
     resources.string('resource_name').unique().notNullable();
     resources.string('resource_description');
-    resources.timestamps(true, true);
   });
 };
 
