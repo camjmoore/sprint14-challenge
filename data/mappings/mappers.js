@@ -31,20 +31,6 @@ function retrieveProject(project) {
   };
 }
 
-function storeResource(resource) {
-  return {
-    ...resource,
-    completed: boolToInt(resource.resource_completed),
-  };
-}
-
-function retrieveResource(resource) {
-  return {
-    ...resource,
-    completed: intToBool(resource.resource_completed),
-  };
-}
-
 function storeTask(task) {
   return {
     ...task,
