@@ -18,14 +18,14 @@ function boolToInt(bool) {
 function storeProject(project) {
   return {
     ...project,
-    completed: intToBool(project.project_completed),
+    completed: boolToInt(project.project_completed),
   };
 }
 
 function retrieveProject(project) {
   return {
     ...project,
-    completed: boolToInt(project.project_completed),
+    completed: intToBool(project.project_completed),
   };
 }
 
