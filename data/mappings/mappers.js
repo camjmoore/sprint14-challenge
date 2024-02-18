@@ -18,27 +18,27 @@ function boolToInt(bool) {
 function storeProject(project) {
   return {
     ...project,
-    completed: boolToInt(project.project_completed),
+    project_completed: boolToInt(project.project_completed),
   };
 }
 
 function retrieveProject(project) {
   return {
     ...project,
-    completed: intToBool(project.project_completed),
+    project_completed: intToBool(project.project_completed),
   };
 }
 
 function storeTask(task) {
   return {
     ...task,
-    completed: boolToInt(task.task_completed),
+    task_completed: boolToInt(task.task_completed),
   };
 }
 
 function retrieveTask(task) {
   return {
     ...task,
-    completed: intToBool(task.task_completed),
+    task_completed: intToBool(task.task_completed),
   };
 }
