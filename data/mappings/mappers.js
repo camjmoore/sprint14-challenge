@@ -2,10 +2,8 @@ module.exports = {
   intToBool,
   boolToInt,
   storeProject,
-  storeResource,
   storeTask,
   retrieveProject,
-  retrieveResource,
   retrieveTask,
 };
 
